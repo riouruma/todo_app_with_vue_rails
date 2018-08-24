@@ -89,8 +89,8 @@
                 el.classList.add('display_none');
                 // 諸々スタイルなどを足して完了済みに追加
                 el_clone.getElementsByTagName('input')[0].checked = 'checked';
-                el_clone.getElementsByTagName('input')[0].classList.add('line-through');
-                el_clone.getElementsByTagName('input')[0].classList.remove('word-color-black');
+                el_clone.getElementsByTagName('label')[0].classList.add('line-through');
+                el_clone.getElementsByTagName('label')[0].classList.remove('word-color-black');
                 var li = document.querySelector('#finished-tasks > ul > li.first-child');
                 document.querySelector('#finished-tasks > ul').insertBefore(el_clone, li);
             }
